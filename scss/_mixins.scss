@@ -1,0 +1,28 @@
+// Mixin for buttons
+@mixin button-styles {
+    padding: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+// Mixin for create note modal
+@mixin modal-styles {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $modal-background;
+    padding: 20px;
+    border: 1px solid $modal-border;
+    z-index: 2;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+
+    &.transitionStateModal {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+}

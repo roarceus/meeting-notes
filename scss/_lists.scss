@@ -1,0 +1,15 @@
+$note-color: rgb(144, 0, 255);
+$button-colors: (
+    "cancel": #ccc,
+    "create": #4caf50,
+);
+
+$button-text-colors: (
+    "cancel": #fff,
+    "create": #fff,
+);
+
+$button-hover-colors: (
+    cancel: darken(map-get($button-colors, cancel), 10%),
+    create: darken(map-get($button-colors, create), 10%),
+);

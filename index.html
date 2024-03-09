@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Notes</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <div class="notes-header">
+        <p>Meeting Notes</p>
+    </div>
+    <!-- Notes sidebar -->
+    <div class="meeting-notes" id="notes-app">
+        <div class="notes-sidebar">
+            <button class="add-notes" type="button">Create Note</button>
+            <div class="notes-list" id="notes-sidebar-container"></div>
+        </div>
+
+        <!-- Notes create modal -->
+        <div class="notes-create" id="note-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <input class="notes-create-title" type="text" placeholder="Type a note title...">
+                <textarea class="notes-create-content" placeholder="Type notes content..."></textarea>
+                
+                <!-- Add Action Items section -->
+                <div class="action-items-container">
+                    <input class="add-action-item" type="text" placeholder="Add Action Item...">
+                    <button class="add-action-item-button">Add Action Item</button>
+
+                    <!-- Display area for added action items -->
+                    <div class="added-action-items"></div>
+                </div>
+
+                <button class="cancel-button">Cancel</button>
+                <button class="create-button">Create</button>
+            </div>
+        </div>
+
+        <!-- Notes display -->
+        <div class="notes-display">
+            <input class="notes-display-title" type="text" disabled>
+            <div class="notes-display-content-container">
+                <textarea class="notes-display-content"></textarea>
+                <div class="notes-display-action-items"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

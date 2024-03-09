@@ -1,0 +1,14 @@
+{
+  "name": "assignment-6-sohanp98",
+  "version": "1.0.0",
+  "description": "Assignment 6",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.0"
+  }
+}
